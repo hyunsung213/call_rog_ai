@@ -10,7 +10,7 @@ export default function SplashPage() {
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push("/home");
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [router]);
@@ -22,7 +22,7 @@ export default function SplashPage() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <img src="/logo.png" alt="마음통화" className="h-16 object-contain" />
+        <img src="/logo.png" alt="마음통화" className="h-35 object-contain" />
       </motion.div>
     </main>
   );

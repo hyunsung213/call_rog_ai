@@ -29,8 +29,8 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         className="pt-3 px-6 pb-2 bg-white z-10 sticky top-0"
       >
-        <div className="flex justify-center items-center h-10">
-          <img src="/logo.png" alt="마음통화" className="h-8 object-contain" />
+        <div className="flex justify-center items-center h-20 mt-2">
+          <img src="/logo.png" alt="마음통화" className="h-20 object-contain" />
         </div>
         <div className="mt-4 relative">
           <input 

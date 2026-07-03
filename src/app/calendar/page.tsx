@@ -20,12 +20,12 @@ export default function CalendarPage() {
       <motion.div 
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="pt-3 px-6 pb-2 bg-white z-10 sticky top-0 border-b border-gray-100 flex items-center justify-center shrink-0 relative h-14"
+        className="pt-4 px-6 pb-2 bg-white z-10 sticky top-0 flex items-center justify-center shrink-0 relative h-20"
       >
         <Link href="/home" className="absolute left-4 p-2 text-gray-800">
           <ChevronLeft size={24} />
         </Link>
-        <img src="/logo.png" alt="마음통화" className="h-8 object-contain" />
+        <img src="/logo.png" alt="마음통화" className="h-20 object-contain" />
       </motion.div>
 
       <main className="flex-1 overflow-y-auto bg-gray-50">
@@ -33,8 +33,15 @@ export default function CalendarPage() {
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.1 }}
-          className="bg-white px-2 py-4 shadow-sm border-b border-gray-100"
+          className="bg-white px-2 py-4 shadow-sm"
         >
+          {/* Month Navigator */}
+          <div className="flex justify-center items-center mb-6 space-x-6 text-gray-800">
+            <button className="p-1"><ChevronLeft size={20} /></button>
+            <span className="font-bold text-lg tracking-wide">2026.02</span>
+            <button className="p-1"><ChevronRight size={20} /></button>
+          </div>
+
           {/* Calendar Grid Header */}
           <div className="grid grid-cols-7 text-center mb-2">
             {['일', '월', '화', '수', '목', '금', '토'].map((day, i) => (
