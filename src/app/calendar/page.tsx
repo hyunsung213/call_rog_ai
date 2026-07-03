@@ -20,7 +20,7 @@ export default function CalendarPage() {
         <motion.div 
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-white flex items-center justify-center relative h-12 overflow-hidden"
+          className="bg-white flex items-center justify-center shrink-0 relative h-14 overflow-hidden"
         >
           <Link href="/home" className="absolute left-4 p-2 text-gray-800 z-10">
             <ChevronLeft size={24} />

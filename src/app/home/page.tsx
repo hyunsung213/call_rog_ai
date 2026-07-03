@@ -27,21 +27,20 @@ export default function Home() {
         <motion.div 
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="px-6 py-2 bg-white"
+          className="bg-white"
         >
-          <div className="flex justify-center items-center h-12 overflow-hidden relative">
+          <div className="bg-white flex items-center justify-center shrink-0 relative h-14 overflow-hidden">
             <img src="/logo.png" alt="마음통화" className="h-24 object-contain absolute" />
           </div>
-          <div className="mt-3 relative">
+          <div className="px-6 mt-2 relative">
             <input 
               type="text" 
               placeholder="연락처 검색..." 
               className="w-full bg-gray-50 border border-gray-200 rounded-xl py-3 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#FF5A5F]/20 focus:border-[#FF5A5F]"
             />
-            <Search size={18} className="text-gray-400 absolute left-3 top-3.5" />
+            <Search size={18} className="text-gray-400 absolute left-9 top-3.5" />
           </div>
         </motion.div>
-        </div>
 
         <div className="px-6 pt-2">
         {/* Contact List */}
@@ -114,7 +113,7 @@ export default function Home() {
       </div>
 
 
-
+</div>
       {/* Bottom Navigation */}
       <nav className="absolute bottom-0 w-full bg-white border-t border-gray-100 flex justify-around items-center py-2 pb-3 px-4">
         <Link href="/calendar" className="flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors p-2">
