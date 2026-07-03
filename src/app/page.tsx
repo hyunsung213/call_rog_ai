@@ -22,7 +22,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex-1 min-h-0 flex flex-col bg-white relative pb-20">
+    <main className="flex-1 min-h-0 flex flex-col bg-white relative pb-14">
       {/* Header Area */}
       <motion.div 
         initial={{ opacity: 0, y: -10 }}
@@ -132,18 +132,18 @@ export default function Home() {
       </motion.div>
 
       {/* Bottom Navigation */}
-      <nav className="absolute bottom-0 w-full bg-white border-t border-gray-100 flex justify-around items-center py-4 pb-6 px-4">
-        <Link href="/calendar" className="flex flex-col items-center gap-1 text-gray-400 hover:text-gray-600 transition-colors">
-          <Calendar size={22} />
-          <span className="text-[10px]">달력</span>
+      <nav className="absolute bottom-0 w-full bg-white border-t border-gray-100 flex justify-around items-center py-2 pb-3 px-4">
+        <Link href="/calendar" className="flex flex-col items-center gap-0.5 text-gray-400 hover:text-gray-600 transition-colors">
+          <Calendar size={18} />
+          <span className="text-[9px]">달력</span>
         </Link>
-        <Link href="/" className="flex flex-col items-center gap-1 text-[#FF5A5F]">
-          <HomeIcon size={22} />
-          <span className="text-[10px] font-medium">홈</span>
+        <Link href="/" className="flex flex-col items-center gap-0.5 text-[#FF5A5F]">
+          <HomeIcon size={18} />
+          <span className="text-[9px] font-medium">홈</span>
         </Link>
-        <Link href="/settings" className="flex flex-col items-center gap-1 text-gray-400 hover:text-gray-600 transition-colors">
-          <User size={22} />
-          <span className="text-[10px]">마이</span>
+        <Link href="/settings" className="flex flex-col items-center gap-0.5 text-gray-400 hover:text-gray-600 transition-colors">
+          <User size={18} />
+          <span className="text-[9px]">마이</span>
         </Link>
       </nav>
     </main>
