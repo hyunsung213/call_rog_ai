@@ -14,7 +14,7 @@ export default function ResultPage() {
   return (
     <div className="flex-1 min-h-0 flex flex-col bg-gray-50 relative pb-5 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
       {/* Header */}
-      <header className="pt-5 px-4 pb-4 flex items-center justify-between bg-white sticky top-0 z-20 shadow-sm shrink-0">
+      <header className="pt-3 px-4 pb-2 flex items-center justify-between bg-white sticky top-0 z-20 shadow-sm shrink-0">
         <button onClick={() => router.push("/calendar")} className="p-2 -ml-2 text-gray-800">
           <ChevronLeft size={24} />
         </button>
@@ -29,7 +29,7 @@ export default function ResultPage() {
           animate={{ opacity: 1, y: 0 }}
           className="flex flex-col items-center justify-center text-center space-y-2 mt-4"
         >
-          <div className="w-20 h-20 rounded-full overflow-hidden mb-2 shadow-sm border-4 border-white bg-[#FF5A5F]/10 flex items-center justify-center">
+          <div className="w-20 h-20 rounded-full overflow-hidden mb-2 shadow-sm bg-[#FF5A5F]/10 flex items-center justify-center">
             <img src={contact.imageUrl} alt={contact.name} className="w-full h-full object-cover" />
           </div>
           <h2 className="text-2xl font-bold text-gray-900">{contact.name}와의 통화</h2>
@@ -99,7 +99,7 @@ export default function ResultPage() {
           <div className="space-y-5">
             {/* My Bubble (Right) */}
             <div className="flex gap-3 flex-row-reverse">
-              <div className="shrink-0 w-10 h-10 rounded-full overflow-hidden shadow-sm border-2 border-white">
+              <div className="shrink-0 w-10 h-10 rounded-full overflow-hidden shadow-sm">
                 <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop" alt="나" className="w-full h-full object-cover" />
               </div>
               <div className="bg-[#FF5A5F] text-white p-4 rounded-2xl rounded-tr-sm shadow-sm max-w-[85%] relative">
@@ -109,7 +109,7 @@ export default function ResultPage() {
             
             {/* Mom's Bubble (Left) */}
             <div className="flex gap-3">
-              <div className="shrink-0 w-10 h-10 rounded-full overflow-hidden shadow-sm border-2 border-white">
+              <div className="shrink-0 w-10 h-10 rounded-full overflow-hidden shadow-sm">
                 <img src={contact.imageUrl} alt={contact.name} className="w-full h-full object-cover" />
               </div>
               <div className="bg-white text-gray-700 p-4 rounded-2xl rounded-tl-sm shadow-sm border border-gray-100 max-w-[85%] relative">

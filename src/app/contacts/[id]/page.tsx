@@ -78,7 +78,7 @@ export default function ContactDetailPage() {
   return (
     <div className="flex-1 min-h-0 flex flex-col bg-gray-50 relative pb-10 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
       {/* Header */}
-      <header className="pt-5 px-4 pb-4 flex items-center justify-between bg-white sticky top-0 z-20 border-b border-gray-100 shrink-0">
+      <header className="pt-3 px-4 pb-2 flex items-center justify-between bg-white sticky top-0 z-20 border-b border-gray-100 shrink-0">
         <button onClick={() => router.back()} className="p-2 -ml-2 text-gray-800">
           <ChevronLeft size={24} />
         </button>
@@ -95,7 +95,7 @@ export default function ContactDetailPage() {
           animate={{ opacity: 1, y: 0 }}
           className="flex flex-col items-center justify-center text-center space-y-2 mt-4"
         >
-          <div className={`w-20 h-20 ${bgClass} rounded-full flex items-center justify-center mb-2 border-4 border-white shadow-sm overflow-hidden shrink-0`}>
+          <div className={`w-20 h-20 ${bgClass} rounded-full flex items-center justify-center mb-2 shadow-sm overflow-hidden shrink-0`}>
             <img src={contact.imageUrl} alt={contact.name} className="w-full h-full object-cover" />
           </div>
           <h2 className="text-2xl font-bold text-gray-900">{contact.name}</h2>
@@ -175,7 +175,7 @@ export default function ContactDetailPage() {
             <h3 className="font-bold text-gray-800">통화 온도 변화</h3>
           </div>
           <div className="bg-white p-5 rounded-3xl shadow-sm border border-gray-100">
-            <div className="h-48 w-full">
+            <div className="h-48 w-full outline-none" style={{ WebkitTapHighlightColor: 'transparent' }}>
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={mockData} margin={{ top: 20, right: 20, left: 0, bottom: 10 }}>
                   <defs>

@@ -27,7 +27,7 @@ export default function Home() {
       <motion.div 
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="pt-5 px-6 pb-4 bg-white z-10 sticky top-0"
+        className="pt-3 px-6 pb-2 bg-white z-10 sticky top-0"
       >
         <h1 className="text-2xl font-bold text-gray-900 leading-snug">
           전화번호부
@@ -59,7 +59,7 @@ export default function Home() {
                   onClick={() => setExpandedId(isExpanded ? null : contact.id)}
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-sm border border-gray-100 bg-gray-50">
+                    <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-sm bg-gray-50">
                       <img src={contact.imageUrl} alt={contact.name} className="w-full h-full object-cover" />
                     </div>
                     <div>
@@ -124,10 +124,10 @@ export default function Home() {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.3, type: "spring" }}
-        className="absolute bottom-24 right-6"
+        className="absolute bottom-16 right-5"
       >
-        <Link href="/conversations/new" className="w-14 h-14 bg-[#FF5A5F] rounded-full flex items-center justify-center text-white shadow-lg hover:bg-[#FF5A5F]/90 transition-colors">
-          <Plus size={24} />
+        <Link href="/conversations/new" className="w-10 h-10 bg-[#FF5A5F] rounded-full flex items-center justify-center text-white shadow-lg hover:bg-[#FF5A5F]/90 transition-colors">
+          <Plus size={18} />
         </Link>
       </motion.div>
 

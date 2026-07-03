@@ -9,7 +9,7 @@ export default function MyPage() {
   return (
     <div className="flex-1 min-h-0 flex flex-col bg-gray-50 relative pb-14">
       {/* Header */}
-      <div className="pt-5 px-6 pb-4 bg-white z-10 sticky top-0 border-b border-gray-100 shrink-0">
+      <div className="pt-3 px-6 pb-2 bg-white z-10 sticky top-0 border-b border-gray-100 shrink-0">
         <div className="flex items-end justify-between">
           <h1 className="text-2xl font-bold text-gray-900 leading-snug">
             마이페이지

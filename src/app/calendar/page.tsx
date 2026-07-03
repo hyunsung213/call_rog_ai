@@ -20,7 +20,7 @@ export default function CalendarPage() {
       <motion.div 
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="pt-5 px-6 pb-4 bg-white z-10 sticky top-0 border-b border-gray-100 flex items-end justify-between shrink-0"
+        className="pt-3 px-6 pb-2 bg-white z-10 sticky top-0 border-b border-gray-100 flex items-end justify-between shrink-0"
       >
         <h1 className="text-2xl font-bold text-gray-900 leading-snug">
           통화 달력
