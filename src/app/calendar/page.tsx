@@ -20,16 +20,12 @@ export default function CalendarPage() {
       <motion.div 
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="pt-3 px-6 pb-2 bg-white z-10 sticky top-0 border-b border-gray-100 flex items-end justify-between shrink-0"
+        className="pt-3 px-6 pb-2 bg-white z-10 sticky top-0 border-b border-gray-100 flex items-center justify-center shrink-0 relative h-14"
       >
-        <h1 className="text-2xl font-bold text-gray-900 leading-snug">
-          통화 달력
-        </h1>
-        <div className="flex space-x-3 text-gray-800 items-center pb-1">
-          <button><ChevronLeft size={20} /></button>
-          <span className="font-bold text-sm">2026년 2월</span>
-          <button><ChevronRight size={20} /></button>
-        </div>
+        <Link href="/home" className="absolute left-4 p-2 text-gray-800">
+          <ChevronLeft size={24} />
+        </Link>
+        <img src="/logo.png" alt="마음통화" className="h-8 object-contain" />
       </motion.div>
 
       <main className="flex-1 overflow-y-auto bg-gray-50">
@@ -115,7 +111,7 @@ export default function CalendarPage() {
         <Link href="/calendar" className="flex items-center justify-center text-[#FF5A5F] p-2">
           <CalendarIcon size={24} />
         </Link>
-        <Link href="/" className="flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors p-2">
+        <Link href="/home" className="flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors p-2">
           <HomeIcon size={24} />
         </Link>
         <Link href="/settings" className="flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors p-2">

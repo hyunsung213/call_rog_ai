@@ -13,13 +13,11 @@ export default function ResultPage() {
 
   return (
     <div className="flex-1 min-h-0 flex flex-col bg-gray-50 relative pb-5 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-      {/* Header */}
-      <header className="pt-3 px-4 pb-2 flex items-center justify-between bg-white sticky top-0 z-20 shadow-sm shrink-0">
-        <button onClick={() => router.push("/calendar")} className="p-2 -ml-2 text-gray-800">
+      <header className="pt-3 px-4 pb-2 flex items-center justify-center bg-white sticky top-0 z-20 shadow-sm shrink-0 relative h-14">
+        <button onClick={() => router.push("/calendar")} className="absolute left-2 p-2 text-gray-800">
           <ChevronLeft size={24} />
         </button>
-        <h1 className="text-base font-bold text-gray-800">통화 분석</h1>
-        <div className="w-10"></div>
+        <img src="/logo.png" alt="마음통화" className="h-8 object-contain" />
       </header>
 
       <main className="px-5 py-2 space-y-8 pb-10">
@@ -38,7 +36,7 @@ export default function ResultPage() {
               <CalendarIcon size={14} className="mr-1.5 text-gray-400" /> 2026.02.17
             </div>
             <div className="flex items-center text-xs text-[#FF5A5F] font-bold bg-white px-3 py-2 rounded-full border border-gray-100 shadow-sm">
-              <Heart size={14} className="mr-1.5 fill-current" /> 15℃
+              <Heart size={14} className="mr-1.5 fill-current" /> 51.5℃
             </div>
           </div>
         </motion.div>

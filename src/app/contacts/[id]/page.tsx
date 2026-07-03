@@ -57,7 +57,7 @@ export default function ContactDetailPage() {
   };
 
   let bgClass = "bg-[#FF5A5F]/10 text-[#FF5A5F]";
-  let scoreColor = "text-[#FF5A5F]";
+  let scoreColor = contact.averageScore > 36.5 ? "text-[#FF5A5F]" : "text-[#3b82f6]";
   let strokeColor = "#FF5A5F";
   if (contact.name === "아버지") {
     bgClass = "bg-blue-50 text-blue-600";
@@ -77,15 +77,11 @@ export default function ContactDetailPage() {
 
   return (
     <div className="flex-1 min-h-0 flex flex-col bg-gray-50 relative pb-10 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-      {/* Header */}
-      <header className="pt-3 px-4 pb-2 flex items-center justify-between bg-white sticky top-0 z-20 border-b border-gray-100 shrink-0">
-        <button onClick={() => router.back()} className="p-2 -ml-2 text-gray-800">
+      <header className="pt-3 px-4 pb-2 flex items-center justify-center bg-white sticky top-0 z-20 border-b border-gray-100 shrink-0 relative h-14">
+        <button onClick={() => router.back()} className="absolute left-2 p-2 text-gray-800">
           <ChevronLeft size={24} />
         </button>
-        <h1 className="text-base font-bold text-gray-800">상대방 기록</h1>
-        <div className="w-10 flex justify-end">
-          <Bell size={20} className="text-gray-400" />
-        </div>
+        <img src="/logo.png" alt="마음통화" className="h-8 object-contain" />
       </header>
 
       <main className="px-5 py-2 space-y-8 pb-10">
