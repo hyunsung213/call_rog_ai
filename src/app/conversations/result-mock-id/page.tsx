@@ -12,7 +12,7 @@ export default function ResultPage() {
   const contact = getContactById("mock-mom-id");
 
   return (
-    <div className="flex flex-col h-full bg-gray-50 relative pb-5 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+    <div className="flex-1 min-h-0 flex flex-col bg-gray-50 relative pb-5 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
       {/* Header */}
       <header className="pt-5 px-4 pb-4 flex items-center justify-between bg-white sticky top-0 z-20 shadow-sm shrink-0">
         <button onClick={() => router.push("/calendar")} className="p-2 -ml-2 text-gray-800">

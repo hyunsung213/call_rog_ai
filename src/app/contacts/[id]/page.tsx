@@ -76,7 +76,7 @@ export default function ContactDetailPage() {
   }
 
   return (
-    <div className="flex flex-col h-full bg-gray-50 relative pb-10 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+    <div className="flex-1 min-h-0 flex flex-col bg-gray-50 relative pb-10 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
       {/* Header */}
       <header className="pt-5 px-4 pb-4 flex items-center justify-between bg-white sticky top-0 z-20 border-b border-gray-100 shrink-0">
         <button onClick={() => router.back()} className="p-2 -ml-2 text-gray-800">

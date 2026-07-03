@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function MyPage() {
   return (
-    <div className="flex flex-col h-full bg-gray-50 relative pb-20">
+    <div className="flex-1 min-h-0 flex flex-col bg-gray-50 relative pb-20">
       {/* Header */}
       <div className="pt-5 px-6 pb-4 bg-white z-10 sticky top-0 border-b border-gray-100 shrink-0">
         <div className="flex items-end justify-between">

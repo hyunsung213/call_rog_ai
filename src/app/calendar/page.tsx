@@ -15,7 +15,7 @@ export default function CalendarPage() {
   const startDayOffset = 3; // e.g. Wed
 
   return (
-    <div className="flex flex-col h-full bg-white relative pb-20">
+    <div className="flex-1 min-h-0 flex flex-col bg-white relative pb-20">
       {/* Header */}
       <motion.div 
         initial={{ opacity: 0, y: -10 }}
