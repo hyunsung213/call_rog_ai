@@ -28,7 +28,7 @@ export const mockContacts: MockContact[] = [
     emoji: "🌿",
     imageUrl: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop",
     relationship: "가족",
-    lastConversationDate: "2026.06.15",
+    lastConversationDate: "2026.02.15",
     averageScore: 6,
     recentTopics: ["취미", "날씨"]
   },
@@ -38,7 +38,7 @@ export const mockContacts: MockContact[] = [
     emoji: "☕",
     imageUrl: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&h=150&fit=crop",
     relationship: "친구",
-    lastConversationDate: "2026.05.22",
+    lastConversationDate: "2026.02.22",
     averageScore: 15,
     recentTopics: ["커피", "이직", "운동"]
   },
