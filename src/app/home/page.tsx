@@ -27,12 +27,12 @@ export default function Home() {
       <motion.div 
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="pt-3 px-6 pb-2 bg-white z-10 sticky top-0"
+        className="px-6 py-2 bg-white z-10 sticky top-0"
       >
-        <div className="flex justify-center items-center h-20 mt-2">
-          <img src="/logo.png" alt="마음통화" className="h-20 object-contain" />
+        <div className="flex justify-center items-center h-12 overflow-hidden relative">
+          <img src="/logo.png" alt="마음통화" className="h-24 object-contain absolute" />
         </div>
-        <div className="mt-4 relative">
+        <div className="mt-3 relative">
           <input 
             type="text" 
             placeholder="연락처 검색..." 

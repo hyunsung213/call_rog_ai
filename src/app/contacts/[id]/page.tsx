@@ -77,11 +77,11 @@ export default function ContactDetailPage() {
 
   return (
     <div className="flex-1 min-h-0 flex flex-col bg-gray-50 relative pb-10 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-      <header className="pt-4 px-4 pb-2 flex items-center justify-center bg-white sticky top-0 z-20 border-b border-gray-100 shrink-0 relative h-20">
-        <button onClick={() => router.back()} className="absolute left-2 p-2 text-gray-800">
+      <header className="bg-white sticky top-0 z-20 border-b border-gray-100 shrink-0 flex items-center justify-center relative h-12 overflow-hidden mt-1">
+        <button onClick={() => router.back()} className="absolute left-2 p-2 text-gray-800 z-10">
           <ChevronLeft size={24} />
         </button>
-        <img src="/logo.png" alt="마음통화" className="h-20 object-contain" />
+        <img src="/logo.png" alt="마음통화" className="h-24 object-contain absolute" />
       </header>
 
       <main className="px-5 py-2 space-y-8 pb-10">

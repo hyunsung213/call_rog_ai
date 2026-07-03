@@ -20,12 +20,12 @@ export default function CalendarPage() {
       <motion.div 
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="pt-4 px-6 pb-2 bg-white z-10 sticky top-0 flex items-center justify-center shrink-0 relative h-20"
+        className="bg-white z-10 sticky top-0 flex items-center justify-center shrink-0 relative h-12 overflow-hidden"
       >
-        <Link href="/home" className="absolute left-4 p-2 text-gray-800">
+        <Link href="/home" className="absolute left-4 p-2 text-gray-800 z-10">
           <ChevronLeft size={24} />
         </Link>
-        <img src="/logo.png" alt="마음통화" className="h-20 object-contain" />
+        <img src="/logo.png" alt="마음통화" className="h-24 object-contain absolute" />
       </motion.div>
 
       <main className="flex-1 overflow-y-auto bg-gray-50">
