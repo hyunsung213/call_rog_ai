@@ -16,19 +16,18 @@ export default function CalendarPage() {
 
   return (
     <div className="flex-1 min-h-0 flex flex-col bg-white relative pb-14">
-      {/* Header */}
-      <motion.div 
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="bg-white z-10 sticky top-0 flex items-center justify-center shrink-0 relative h-12 overflow-hidden"
-      >
-        <Link href="/home" className="absolute left-4 p-2 text-gray-800 z-10">
-          <ChevronLeft size={24} />
-        </Link>
-        <img src="/logo.png" alt="마음통화" className="h-24 object-contain absolute" />
-      </motion.div>
-
       <main className="flex-1 overflow-y-auto bg-gray-50">
+        <motion.div 
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="bg-white flex items-center justify-center relative h-12 overflow-hidden"
+        >
+          <Link href="/home" className="absolute left-4 p-2 text-gray-800 z-10">
+            <ChevronLeft size={24} />
+          </Link>
+          <img src="/logo.png" alt="마음통화" className="h-24 object-contain absolute" />
+        </motion.div>
+
         <motion.div 
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}

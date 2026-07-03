@@ -13,7 +13,7 @@ export default function ResultPage() {
 
   return (
     <div className="flex-1 min-h-0 flex flex-col bg-gray-50 relative pb-5 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-      <header className="bg-white sticky top-0 z-20 shadow-sm shrink-0 flex items-center justify-center relative h-12 overflow-hidden mt-1">
+      <header className="bg-white z-20 shadow-sm shrink-0 flex items-center justify-center relative h-12 overflow-hidden mt-1">
         <button onClick={() => router.push("/calendar")} className="absolute left-2 p-2 text-gray-800 z-10">
           <ChevronLeft size={24} />
         </button>

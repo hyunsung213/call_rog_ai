@@ -8,14 +8,15 @@ import { motion } from "framer-motion";
 export default function MyPage() {
   return (
     <div className="flex-1 min-h-0 flex flex-col bg-gray-50 relative pb-14">
-      <div className="bg-white z-10 sticky top-0 flex items-center justify-center shrink-0 relative h-12 overflow-hidden mt-1">
-        <Link href="/home" className="absolute left-4 p-2 text-gray-800 z-10">
-          <ChevronLeft size={24} />
-        </Link>
-        <img src="/logo.png" alt="마음통화" className="h-24 object-contain absolute" />
-      </div>
+      <main className="flex-1 overflow-y-auto">
+        <div className="bg-white flex items-center justify-center shrink-0 relative h-12 overflow-hidden mt-1">
+          <Link href="/home" className="absolute left-4 p-2 text-gray-800 z-10">
+            <ChevronLeft size={24} />
+          </Link>
+          <img src="/logo.png" alt="마음통화" className="h-24 object-contain absolute" />
+        </div>
 
-      <main className="flex-1 overflow-y-auto px-6 py-6 space-y-6">
+        <div className="px-6 py-6 space-y-6">
         {/* Profile Card */}
         <motion.section 
           initial={{ opacity: 0, y: 10 }}
@@ -85,6 +86,7 @@ export default function MyPage() {
           </button>
         </motion.section>
 
+        </div>
       </main>
 
       {/* Bottom Navigation */}

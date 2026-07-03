@@ -23,26 +23,27 @@ export default function Home() {
 
   return (
     <main className="flex-1 min-h-0 flex flex-col bg-white relative pb-14">
-      {/* Header Area */}
-      <motion.div 
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="px-6 py-2 bg-white z-10 sticky top-0"
-      >
-        <div className="flex justify-center items-center h-12 overflow-hidden relative">
-          <img src="/logo.png" alt="마음통화" className="h-24 object-contain absolute" />
+      <div className="flex-1 overflow-y-auto pb-6">
+        <motion.div 
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="px-6 py-2 bg-white"
+        >
+          <div className="flex justify-center items-center h-12 overflow-hidden relative">
+            <img src="/logo.png" alt="마음통화" className="h-24 object-contain absolute" />
+          </div>
+          <div className="mt-3 relative">
+            <input 
+              type="text" 
+              placeholder="연락처 검색..." 
+              className="w-full bg-gray-50 border border-gray-200 rounded-xl py-3 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#FF5A5F]/20 focus:border-[#FF5A5F]"
+            />
+            <Search size={18} className="text-gray-400 absolute left-3 top-3.5" />
+          </div>
+        </motion.div>
         </div>
-        <div className="mt-3 relative">
-          <input 
-            type="text" 
-            placeholder="연락처 검색..." 
-            className="w-full bg-gray-50 border border-gray-200 rounded-xl py-3 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#FF5A5F]/20 focus:border-[#FF5A5F]"
-          />
-          <Search size={18} className="text-gray-400 absolute left-3 top-3.5" />
-        </div>
-      </motion.div>
 
-      <div className="flex-1 overflow-y-auto px-6 pb-6 pt-2">
+        <div className="px-6 pt-2">
         {/* Contact List */}
         <div className="space-y-1">
           {mockContacts.map((contact, index) => {
