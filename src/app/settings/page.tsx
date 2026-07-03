@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ChevronRight, Calendar as CalendarIcon, Users, User, Home, Settings, LogOut, Bell, CircleHelp, CreditCard, HomeIcon } from "lucide-react";
+import { ChevronRight, Calendar as CalendarIcon, Users, User, Home, Settings, LogOut, Bell, CircleHelp, CreditCard, HomeIcon, ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
