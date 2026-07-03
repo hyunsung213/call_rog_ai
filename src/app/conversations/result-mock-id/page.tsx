@@ -91,7 +91,7 @@ export default function ResultPage() {
             {/* My Bubble (Right) */}
             <div className="flex gap-3 flex-row-reverse">
               <div className="shrink-0 w-10 h-10 rounded-full overflow-hidden shadow-sm">
-                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop" alt="나" className="w-full h-full object-cover" />
+                <img src="/avatars/me.png" alt="나" className="w-full h-full object-cover" />
               </div>
               <div className="bg-[#FF5A5F] text-white p-4 rounded-2xl rounded-tr-sm shadow-sm max-w-[85%] relative">
                 <p className="text-[13px] leading-relaxed font-medium">설날에 방문하지 못해 미안해하며, 어머니의 무릎 통증을 진심으로 걱정하고 선물(찜질기, 실내화)과 다음 방문을 약속함.</p>

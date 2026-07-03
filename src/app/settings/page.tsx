@@ -24,7 +24,7 @@ export default function MyPage() {
           className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex items-center gap-5"
         >
           <div className="w-16 h-16 rounded-full bg-gray-200 overflow-hidden shrink-0 border border-gray-100 shadow-sm">
-            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop" alt="내 프로필" className="w-full h-full object-cover" />
+            <img src="/avatars/me.png" alt="내 프로필" className="w-full h-full object-cover" />
           </div>
           <div>
             <h2 className="font-bold text-gray-900 text-lg">김사용자</h2>
