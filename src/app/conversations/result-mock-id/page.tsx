@@ -68,7 +68,7 @@ export default function ResultPage() {
         >
           <div className="flex items-center gap-2 mb-3 ml-1">
             <div className="w-5 h-5 rounded-md bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center text-white text-xs shadow-sm">📝</div>
-            <h3 className="font-bold text-gray-800">통화 한 줄 요약</h3>
+            <h3 className="font-bold text-gray-800">통화 일기</h3>
           </div>
           <div className="bg-white p-5 rounded-3xl shadow-sm border border-gray-100 text-center">
             <p className="text-[15px] text-gray-800 font-medium leading-relaxed italic">
