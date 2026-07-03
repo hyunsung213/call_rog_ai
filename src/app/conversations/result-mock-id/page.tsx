@@ -72,16 +72,9 @@ export default function ResultPage() {
             <div className="w-5 h-5 rounded-md bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center text-white text-xs shadow-sm">📝</div>
             <h3 className="font-bold text-gray-800">통화 한 줄 요약</h3>
           </div>
-          <div 
-            className="p-5 rounded-3xl shadow-sm border border-[#e2d9c8] bg-[#fdfbf7] relative overflow-hidden"
-            style={{
-              backgroundImage: 'repeating-linear-gradient(transparent, transparent 31px, #e8dfce 31px, #e8dfce 32px)',
-              backgroundAttachment: 'local'
-            }}
-          >
-            <div className="absolute left-6 top-0 bottom-0 w-px bg-red-200/60 z-0"></div>
-            <p className="text-gray-800 leading-[32px] font-medium relative z-10 pl-5 pt-1 font-serif tracking-tight">
-              설날에 방문하지 못한 미안함을 전하고, 어머니의 무릎 건강을 챙기며 온열 찜질기와 실내화를 보내기로 약속했다.
+          <div className="bg-white p-5 rounded-3xl shadow-sm border border-gray-100 text-center">
+            <p className="text-[15px] text-gray-800 font-medium leading-relaxed italic">
+              &ldquo;설날에 방문하지 못한 미안함을 전하고, 어머니의 무릎 건강을 챙기며 온열 찜질기와 실내화를 보내기로 약속했다.&rdquo;
             </p>
           </div>
         </motion.section>

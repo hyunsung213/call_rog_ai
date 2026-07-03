@@ -95,13 +95,6 @@ export default function Home() {
                           <Phone size={20} className="text-green-600 fill-current" />
                           <span className="text-xs font-medium text-gray-700">통화하기</span>
                         </button>
-                        <button 
-                          onClick={handleAddConversation}
-                          className="flex-1 flex flex-col items-center justify-center gap-1.5 bg-gray-50 py-3 rounded-2xl hover:bg-gray-100 transition-colors"
-                        >
-                          <Plus size={20} className="text-[#FF5A5F]" />
-                          <span className="text-xs font-medium text-gray-700">기록 추가</span>
-                        </button>
                         <Link 
                           href={`/contacts/${contact.id}`}
                           className="flex-1 flex flex-col items-center justify-center gap-1.5 bg-gray-50 py-3 rounded-2xl hover:bg-gray-100 transition-colors"
@@ -124,26 +117,23 @@ export default function Home() {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.3, type: "spring" }}
-        className="absolute bottom-16 right-5"
+        className="absolute bottom-12 right-5"
       >
-        <Link href="/conversations/new" className="w-10 h-10 bg-[#FF5A5F] rounded-full flex items-center justify-center text-white shadow-lg hover:bg-[#FF5A5F]/90 transition-colors">
+        <button className="w-10 h-10 bg-[#FF5A5F] rounded-full flex items-center justify-center text-white shadow-lg hover:bg-[#FF5A5F]/90 transition-colors">
           <Plus size={18} />
-        </Link>
+        </button>
       </motion.div>
 
       {/* Bottom Navigation */}
       <nav className="absolute bottom-0 w-full bg-white border-t border-gray-100 flex justify-around items-center py-2 pb-3 px-4">
-        <Link href="/calendar" className="flex flex-col items-center gap-0.5 text-gray-400 hover:text-gray-600 transition-colors">
-          <Calendar size={18} />
-          <span className="text-[9px]">달력</span>
+        <Link href="/calendar" className="flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors p-2">
+          <Calendar size={24} />
         </Link>
-        <Link href="/" className="flex flex-col items-center gap-0.5 text-[#FF5A5F]">
-          <HomeIcon size={18} />
-          <span className="text-[9px] font-medium">홈</span>
+        <Link href="/" className="flex items-center justify-center text-[#FF5A5F] p-2">
+          <HomeIcon size={24} />
         </Link>
-        <Link href="/settings" className="flex flex-col items-center gap-0.5 text-gray-400 hover:text-gray-600 transition-colors">
-          <User size={18} />
-          <span className="text-[9px]">마이</span>
+        <Link href="/settings" className="flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors p-2">
+          <User size={24} />
         </Link>
       </nav>
     </main>

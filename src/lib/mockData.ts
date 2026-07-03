@@ -19,7 +19,7 @@ export const mockContacts: MockContact[] = [
     imageUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop",
     relationship: "가족",
     lastConversationDate: "2026.02.17",
-    averageScore: 15,
+    averageScore: 51.5,
     recentTopics: ["설날", "건강", "선물 약속", "본가 방문"]
   },
   {
@@ -29,7 +29,7 @@ export const mockContacts: MockContact[] = [
     imageUrl: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop",
     relationship: "가족",
     lastConversationDate: "2026.02.15",
-    averageScore: 6,
+    averageScore: 42.5,
     recentTopics: ["취미", "날씨"]
   },
   {
@@ -39,7 +39,7 @@ export const mockContacts: MockContact[] = [
     imageUrl: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&h=150&fit=crop",
     relationship: "친구",
     lastConversationDate: "2026.02.22",
-    averageScore: 15,
+    averageScore: 51.5,
     recentTopics: ["커피", "이직", "운동"]
   },
   {
@@ -49,7 +49,7 @@ export const mockContacts: MockContact[] = [
     imageUrl: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&h=150&fit=crop",
     relationship: "연인",
     lastConversationDate: "2026.02.16",
-    averageScore: 18,
+    averageScore: 54.5,
     recentTopics: ["데이트", "영화", "저녁 식사"]
   }
 ];

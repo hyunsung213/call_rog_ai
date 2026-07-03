@@ -10,7 +10,7 @@ import { getContactById } from "@/lib/mockData";
 const CustomDot = (props: any) => {
   const { cx, cy, payload } = props;
   const score = payload.score;
-  const ratio = Math.max(0, Math.min(1, (score + 20) / 40));
+  const ratio = Math.max(0, Math.min(1, (score - 16.5) / 40));
   const r = Math.round(59 + ratio * (255 - 59));
   const g = Math.round(130 + ratio * (90 - 130));
   const b = Math.round(246 + ratio * (95 - 246));
@@ -21,7 +21,7 @@ const CustomDot = (props: any) => {
 const CustomChartTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     const score = payload[0].value;
-    const ratio = Math.max(0, Math.min(1, (score + 20) / 40));
+    const ratio = Math.max(0, Math.min(1, (score - 16.5) / 40));
     const r = Math.round(59 + ratio * (255 - 59));
     const g = Math.round(130 + ratio * (90 - 130));
     const b = Math.round(246 + ratio * (95 - 246));
@@ -36,11 +36,11 @@ const CustomChartTooltip = ({ active, payload }: any) => {
 };
 
 const mockData = [
-  { date: "1/20", score: -5 },
-  { date: "1/27", score: 2 },
-  { date: "2/03", score: -12 },
-  { date: "2/10", score: 8 },
-  { date: "2/17", score: 15 },
+  { date: "1/20", score: 31.5 },
+  { date: "1/27", score: 38.5 },
+  { date: "2/03", score: 24.5 },
+  { date: "2/10", score: 44.5 },
+  { date: "2/17", score: 51.5 },
 ];
 
 export default function ContactDetailPage() {
@@ -186,20 +186,20 @@ export default function ContactDetailPage() {
                   </defs>
                   <XAxis dataKey="date" axisLine={false} tickLine={false} tick={{ fontSize: 10, fill: '#9ca3af' }} dy={10} />
                   <YAxis 
-                    domain={[-20, 20]} 
-                    ticks={[20, 10, 0, -10, -20]}
+                    domain={[16.5, 56.5]} 
+                    ticks={[56.5, 46.5, 36.5, 26.5, 16.5]}
                     tickFormatter={(value) => `${value}℃`}
-                    width={35}
+                    width={38}
                     tick={{ fontSize: 10, fill: '#9ca3af' }}
                     axisLine={false}
                     tickLine={false}
                     interval={0}
                   />
-                  <ReferenceLine y={20} stroke="#f3f4f6" strokeDasharray="3 3" />
-                  <ReferenceLine y={10} stroke="#f3f4f6" strokeDasharray="3 3" />
-                  <ReferenceLine y={0} stroke="#e5e7eb" strokeDasharray="3 3" />
-                  <ReferenceLine y={-10} stroke="#f3f4f6" strokeDasharray="3 3" />
-                  <ReferenceLine y={-20} stroke="#f3f4f6" strokeDasharray="3 3" />
+                  <ReferenceLine y={56.5} stroke="#f3f4f6" strokeDasharray="3 3" />
+                  <ReferenceLine y={46.5} stroke="#f3f4f6" strokeDasharray="3 3" />
+                  <ReferenceLine y={36.5} stroke="#e5e7eb" strokeDasharray="3 3" />
+                  <ReferenceLine y={26.5} stroke="#f3f4f6" strokeDasharray="3 3" />
+                  <ReferenceLine y={16.5} stroke="#f3f4f6" strokeDasharray="3 3" />
                   <Tooltip content={<CustomChartTooltip />} cursor={{ stroke: '#f3f4f6', strokeWidth: 2 }} />
                   <Line 
                     type="monotone" 
